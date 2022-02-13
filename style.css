@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(216, 185, 146);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+}
+
+ul {
+    font-size: 1.2em;
+}
+
+img {
+    display: block;
+    margin: 5px auto;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    float: left;
+    margin: 1.5%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: rgb(94, 139, 133);
+    color: white;
+  }
+
+  .flip-card-back {
+    background-color: rgb(94, 139, 133);
+    color: white;
+    transform: rotateY(180deg);
+  }
