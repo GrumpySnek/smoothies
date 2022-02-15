@@ -12,12 +12,17 @@
     <title>Smoothie Recipes</title>
 </head>
 <body>
+
     <h1>Smoothie Recipes</h1>
+
+    <input id="searchbar" onkeyup="search_smoothies()" type="text"
+        name="search" placeholder="Search smoothies..">
+
     <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="assets/creamykale.jpg" alt="Creamy Kale Smoothie image" style="width:290px;height:290px;">
-            <h2>Creamy Kale Smoothie</h2>
+            <h2 class="smoothie">Creamy Kale Smoothie</h2>
           </div>
           <div class="flip-card-back">
             <h2>Creamy Kale Smoothie</h2>
@@ -36,7 +41,7 @@
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="assets/citruspineapple.png" alt="Citrus Pineapple Smoothie image" style="width:290px;height:290px;">
-            <h2>Citrus-Pineapple Smoothie</h2>
+            <h2 class="smoothie">Citrus-Pineapple Smoothie</h2>
           </div>
           <div class="flip-card-back">
             <h2>Citrus-Pineapple Smoothie</h2>
@@ -56,7 +61,7 @@
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img src="assets/peachblueberry.jpg" alt="Peach Blueberry Smoothie image" style="width:290px;height:290px;">
-            <h2>Peach Blueberry Smoothie</h2>
+            <h2 class="smoothie">Peach Blueberry Smoothie</h2>
           </div>
           <div class="flip-card-back">
             <h2>Peach Blueberry Smoothie</h2>
@@ -70,6 +75,477 @@
           </div>
         </div>
       </div>
-    
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/bananablueberrysoy.jpg" alt="Banana Blueberry Soy Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Banana Blueberry Soy Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Banana Blueberry Soy Smoothie</h2>
+            <ul>
+                <li>1 1/4 cups light soy milk</li>
+                <li>1/4 cup fresh or frozen bluberries</li>
+                <li>1/2 frozen banana</li>
+                <li>1 tsp vanilla extract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/peachcreamoatmeal.png" alt="Peaches and Cream Oatmeal Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Peaches and Cream Oatmeal Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Peaches and Cream Oatmeal Smoothie</h2>
+            <ul>
+                <li>1/2 cup whole milk</li>
+                <li>1/2 cup Greek yogurt</li>
+                <li>1/2 cup rolled oats</li>
+                <li>1 cup frozen peaches</li>
+                <li>1/2 frozen banana</li>
+                <li>1/2 cup ice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/pineapplepassion.jpg" alt="Pineapple Passion Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Pineapple Passion Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Pineapple Passion Smoothie</h2>
+            <ul>
+                <li>1 cup low-fat vanilla yogurt</li>
+                <li>1/2 cup ice cubes</li>
+                <li>1 cup pineapple chunks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/silkyskin.jpg" alt="Silky Skin Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Silky Skin Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Silky Skin Smoothie</h2>
+            <ul>
+                <li>1/2 cup ice cubes</li>
+                <li>1/2 cup Greek yogurt</li>
+                <li>1/4 cup grated carrot</li>
+                <li>1 tsp honey</li>
+                <li>1/2 tsp cinnamon</li>
+                <li>2 chopped dried apricot</li>
+                <li>1 fresh apricot (pitted and coarsely chopped)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/leanmeangreen.png" alt="Lean, Mean, Green Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Lean, Mean, Green Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Lean, Mean, Green Smoothie</h2>
+            <ul>
+                <li>1 medium banana (cut into chunks)</li>
+                <li>1 kiwi (peeled and cut into chunks)</li>
+                <li>1 cup unsweetened almond milk</li>
+                <li>1 cup spinach</li>
+                <li>1 scoop vanilla whey protein powder</li>
+                <li>1/2 cup coconut water</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/berrybananaoat.png" alt="Berry Banana Oat Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Berry Banana Oat Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Berry Banana Oat Smoothie</h2>
+            <ul>
+                <li>2 cups frozen strawberries</li>
+                <li>1 cup vanilla low-fat yogurt</li>
+                <li>1 banana (sliced)</li>
+                <li>1/2 cup rolled oats</li>
+                <li>1/2 cup orange juice</li>
+                <li>1 tbsp honey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/caribbeandream.png" alt="Caribbean Dream Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Caribbean Dream Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Caribbean Dream Smoothie</h2>
+            <ul>
+                <li>1/2 cup pineapple chunks</li>
+                <li>1/4 cup Greek yogurt</li>
+                <li>1/4 cup unsweetened coconut milk</li>
+                <li>1/4 cup orange juice</li>
+                <li>1/4 large banana</li>
+                <li>1/2 cup ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/greenginger.jpg" alt="Green Ginger Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Green Ginger Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Green Ginger Smoothie</h2>
+            <ul>
+                <li>2 cups packed baby spinach</li>
+                <li>1 Granny Smith apple (chopped)</li>
+                <li>3/4 cup coconut water</li>
+                <li>1/4 cup lemon juice</li>
+                <li>2 tbsp hemp seeds</li>
+                <li>3 tsp minced ginger</li>
+                <li>1 tsp honey</li>
+                <li>1 1/2 cup ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/cranberrybanana.jpg" alt="Cranberry Banana Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Cranberry Banana Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Cranberry Banana Smoothie</h2>
+            <ul>
+                <li>1 cup frozen cranberries</li>
+                <li>1 cup almond milk</li>
+                <li>1 banana</li>
+                <li>1 tbsp maple syrup</li>
+                <li>1/2 cup ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/applecrisp.jpg" alt="Apple Crisp Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Apple Crisp Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Apple Crisp Smoothie</h2>
+            <ul>
+                <li>1 cup apple cider</li>
+                <li>1/2 cup vanilla Greek yogurt</li>
+                <li>1/4 cup rolled oats</li>
+                <li>2 tbsp pecans</li>
+                <li>1/4 tsp cinnamon</li>
+                <li>1/4 tsp nutmeg</li>
+                <li>1 cup ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/bananaginger.jpg" alt="Banana Ginger Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Banana Ginger Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Banana Ginger Smoothie</h2>
+            <ul>
+                <li>1 tbsp grated fresh ginger</li>
+                <li>1 banana</li>
+                <li>3/4 cup vanilla yogurt</li>
+                <li>1 tbsp honey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/orangedream.jpg" alt="Orange Dream Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Orange Dream Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Orange Dream Smoothie</h2>
+            <ul>
+                <li>1 navel orange (peeled, cut into chunks)</li>
+                <li>1/4 cup fat-free yogurt</li>
+                <li>2 tbsp frozen orange juice concentrate</li>
+                <li>1/4 tsp vanilla extract</li>
+                <li>4 ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/greenteablueberrybanana.jpg" alt="Green Tea, Blueberry, Banana Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Green Tea, Blueberry, and Banana Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Green Tea, Blueberry, and Banana Smoothie</h2>
+            <ul>
+                <li>3 tbsp of hot water</li>
+                <li>1 green tea bag (steep for 3 minutes, then remove)</li>
+                <li>2 tsp honey</li>
+                <li>1 1/2 cup frozen blueberry</li>
+                <li>1/2 medium banana</li>
+                <li>3/4 cup vanilla soy milk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/mochaprotein.png" alt="Mocha Protein Shake image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Mocha Protein Shake</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Mocha Protein Shake</h2>
+            <ul>
+                <li>1 1/2 cup black coffee (cooled)</li>
+                <li>1 large frozen banana (cut into chunks)</li>
+                <li>1 cup ice cubes</li>
+                <li>1/4 cup walnuts</li>
+                <li>1 tbsp unsweetened cocoa powder</li>
+                <li>6 tbsp chocolate protein powder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/strawberrykiwi.jpg" alt="Strawberry-Kiwi Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Strawberry-Kiwi Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Strawberry-Kiwi Smoothie</h2>
+            <ul>
+                <li>1 1/4 cup cold apple juice</li>
+                <li>1 ripe banana</li>
+                <li>1 kiwi</li>
+                <li>5 frozen strawberries</li>
+                <li>1 1/2 tsp honey</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/papayaperfection.jpg" alt="Tropical Papaya Perfection Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Tropical Papaya Perfection Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Tropical Papaya Perfection Smoothie</h2>
+            <ul>
+                <li>1 papaya (cut into chunks)</li>
+                <li>1 cup fat-free plain yogurt</li>
+                <li>1/2 cup fresh pineapple chunks</li>
+                <li>1/2 cup crushed ice</li>
+                <li>1 tsp coconut extract</li>
+                <li>1 tsp ground flaxseed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/bananaalmondprotein.jpg" alt="Banana Almond Protein Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Banana Almond Protein Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Banana Almond Protein Smoothie</h2>
+            <ul>
+                <li>1/2 cup coconut water</li>
+                <li>1/2 cup plain Greek yogurt</li>
+                <li>3 tbsp almond butter</li>
+                <li>1 scoop whey protein powder</li>
+                <li>1 tbsp hemp seeds</li>
+                <li>1 frozen banana</li>
+                <li>1 cup ice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/watermelonwonder.jpg" alt="Watermelon Wonder Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Watermelon Wonder Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Watermelon Wonder Smoothie</h2>
+            <ul>
+                <li>2 cups chopped watermelon</li>
+                <li>1/4 milk of choice</li>
+                <li>2 cups ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/berrygood.jpg" alt="Berry Good Workout Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Berry Good Workout Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Berry Good Workout Smoothie</h2>
+            <ul>
+                <li>1 1/2 cups chopped strawberries</li>
+                <li>1 cup blueberries</li>
+                <li>1/2 cup raspberries</li>
+                <li>2 tbsp honey</li>
+                <li>1 tsp fresh lemon juice</li>
+                <li>1/2 cup ice cubes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/sunrise.jpg" alt="Sunrise Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Sunrise Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Sunrise Smoothie</h2>
+            <ul>
+                <li>1 banana</li>
+                <li>1 apricot nectar (chilled)</li>
+                <li>1 container of low-fat peach yogurt</li>
+                <li>1 tbsp frozen lemonade concentrate</li>
+                <li>1/2 cup chilled club soda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/tuttifrutti.jpg" alt="Tutti-Frutti Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Tutti-Frutti Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Tutti-Frutti Smoothie</h2>
+            <ul>
+                <li>1/2 cup mixed frozen berries</li>
+                <li>1/2 cup canned crushed pineapple in juice</li>
+                <li>1/2 cup plain yogurt</li>
+                <li>1/2 cup sliced ripe banana</li>
+                <li>1/2 cup orange juice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/mangomadness.jpg" alt="Mango Madness Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Mango Madness Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Mango Madness Smoothie</h2>
+            <ul>
+                <li>1 can of pineapple chunks with juice</li>
+                <li>1 cup fat-free frozen vanilla yogurt</li>
+                <li>1 large mango</li>
+                <li>1 ripe banana</li>
+                <li>4 cups of ice (add gradually)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/carrotcake.jpg" alt="Carrot Cake Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Carrot Cake Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Carrot Cake Smoothie</h2>
+            <ul>
+                <li>1 cup chopped carrots</li>
+                <li>1/2 cup frozen sliced banana</li>
+                <li>1/2 cup unsweetened vanilla cashew milk</li>
+                <li>1/4 cup frozen diced pineapple</li>
+                <li>2 tbsp toasted walnuts</li>
+                <li>1/4 tsp cinnamon</li>
+                <li>1 tbsp flaked coconut (optional)</li>
+                <li>pinch nutmeg</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="assets/cranberrycitrus.jpg" alt="Cranberry Citrus Smoothie image" style="width:290px;height:290px;">
+            <h2 class="smoothie">Cranberry Citrus Smoothie</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2>Cranberry Citrus Smoothie</h2>
+            <ul>
+                <li>3 oranges (peeled)</li>
+                <li>1/2 cup cranberries (fresh or frozen)</li>
+                <li>1/2 banana (frozen)</li>
+                <li>1/4 cup plain Greek yogurt</li>
+                <li>1/2 tsp vanilla extract</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <script src="smoothies.js"></script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 body {
     background-color: rgb(216, 185, 146);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1, h2 {
@@ -63,4 +66,21 @@ img {
     background-color: rgb(94, 139, 133);
     color: white;
     transform: rotateY(180deg);
+  }
+
+  #searchbar {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+  }
+
+  input[type=text]:focus {
+      width: 50%;
+  }
+
+  @media (max-width: 980px){
+      .flip-card-front {
+        margin-left: 10%;
+        margin-right: 10%;
+      }
   }
